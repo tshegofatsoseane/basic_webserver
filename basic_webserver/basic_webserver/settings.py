@@ -14,6 +14,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['seanebasic_webserver.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['seanebasic_webserver.onrender.com', 'localhost', '127.0.0.1', "127.0.0.1:8000"]
 
 
 # Application definition
